@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Image Slider</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="container">
+			<div>
+				<button class="btn" onclick="left()">Left</button>
+				<img id="photo"></img>
+				<button class="btn" onclick="right()">Right</button>
+			</div>
+			
+			<div>
+				<form>
+					<label>Sepia:</label>
+					<br/>
+					<input type="range" id="sepia" min="0" max="100">
+					<br/>
+					<label>Grayscale:</label>
+					<br/>
+					<input type="range" id="gs" min="0" max="100">
+					<br/>
+					<label>Saturate:</label>
+					<br/>
+					<input type="range" id="sat" min="0" max="250">
+					<br/>
+					<label>Hue-Rotate:</label>
+					<br/>
+					<input type="range" id="hue" min="0" max="360">
+					<br/>
+					<label>Invert:</label>
+					<br/>
+					<input type="range" id="inv" min="0" max="100">
+					<br/>
+					<label>Opacity:</label>
+					<br/>
+					<input type="range" id="opac" min="0" max="100">
+					<br/>
+					<label>Brightness:</label>
+					<br/>
+					<input type="range" id="bright" min="0" max="200">
+					<br/>
+					<label>Contrast:</label>
+					<br/>
+					<input type="range" id="cont" min="0" max="200">
+					<br/>
+					<label>Blur:</label>
+					<br/>
+					<input type="range" id="blu" min="0" max="10">
+					<br/>
+				</form>
+			</div>
+			<button onclick="restart()" >Reset</button>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
